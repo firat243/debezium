@@ -21,18 +21,26 @@
 ![image](https://user-images.githubusercontent.com/110333072/182687571-66657260-bad8-44f3-a3bf-eb852a79482f.png)           
 >members ' a replicaSet ' e eklenecek mongodb databaseleri eklenir                                
 
-
-
-
-
-
-
 - rs.initilaze(config)
 
 ## DEBEZİUM-CONNECTOR e giriyoruz
 - docker-compose.yaml ' ın içindeki envionmelt 'in altındaki BOOTSTRAP-SERVERS (resimde beyaz çizgiyle belirtilen yer) kısmına kafka URL ' si yazılır      
 ![image](https://user-images.githubusercontent.com/110333072/182692736-817c3745-da4f-4c77-89eb-19742adc82fd.png)
 
+- mongodb ye debezium connector eklemek için register-mongodb.json un içindeki mongodb.host kısmına url eklenir      ![image](https://user-images.githubusercontent.com/110333072/182693220-b4ef1818-13e6-4f64-b383-08824415c2fd.png)
+
+- mongodb.name -> (resimde gösterilen yer) kafka topiclerinin başlangıç isimlerini verir.                                                                            ![image](https://user-images.githubusercontent.com/110333072/182694300-0f52c65f-46d3-4df3-856e-8696447f0308.png)
+
+- Debezium a post isteği atılırken register mongodb.json gönderilir
+
+- Debezium a get isteği atılarak connecterler görüntülenebilir
+
+## Test İçin
+
+- Test ' e girilir 
+- node consumer.js de kafka consumer çalıştırılır ve productor.js de de aynısı yapılır
+- kafka deneme mongo.signum.test i dinliyor
+- mongodb ye veri ekleme yapıldığında node consumer mesajı alır.
 
 
 
