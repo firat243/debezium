@@ -4,13 +4,16 @@
 
 *docker-compose.yml ın içindeki environment in altında yer alan kısımdan Ip adresi ekliyoruz (resimde beyaz çizgiyle belirtilen yer)* ![image](https://user-images.githubusercontent.com/110333072/182684740-23cb17d6-a9cf-43e4-b2e1-dc06ca14df69.png)
 
-## Terminal ' e docker.compose up-d yazınız
+### Kafka Çalıştırma
 ![image](https://user-images.githubusercontent.com/110333072/182687016-d2903d04-a073-475b-8a0c-88cecc99dc49.png)
 
 
 ## Debezium ' u çalıştırmak için replicaSet oluşturulması gerekiyor.Bunun için:
 **Mongo-Starter** *e giriyoruz. docker-compose.yaml ' ın içindeki ReplicaSet ismini comand : yanındaki deneme yazısını değştirerek değiştirebilirsiniz(resimde beyaz çizgiyle belirtilen yer)*
 ![image](https://user-images.githubusercontent.com/110333072/182686787-b1786536-6cf9-4c0b-bac3-35bff8382ad9.png)
+
+### Mongodb Çalıştırma
+![image](https://user-images.githubusercontent.com/110333072/182687016-d2903d04-a073-475b-8a0c-88cecc99dc49.png)
 
 ## Commands.txt 'de de yer alan aşağıdaki komutları sırasıyla yazıyoruz
 
@@ -26,6 +29,10 @@
 ## DEBEZİUM-CONNECTOR e giriyoruz
 - docker-compose.yaml ' ın içindeki envionmelt 'in altındaki BOOTSTRAP-SERVERS (resimde beyaz çizgiyle belirtilen yer) kısmına kafka URL ' si yazılır      
 ![image](https://user-images.githubusercontent.com/110333072/182692736-817c3745-da4f-4c77-89eb-19742adc82fd.png)
+
+### Debezium Connect Çalıştırma
+![image](https://user-images.githubusercontent.com/110333072/182696316-b731a02f-f042-47f7-a9f7-1f50be0107eb.png)
+
 
 - mongodb ye debezium connector eklemek için register-mongodb.json un içindeki mongodb.host kısmına url eklenir      ![image](https://user-images.githubusercontent.com/110333072/182693220-b4ef1818-13e6-4f64-b383-08824415c2fd.png)
 
