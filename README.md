@@ -9,7 +9,7 @@
 
 
 ## Debezium ' u çalıştırmak için replicaSet oluşturulması gerekiyor.Bunun için:
-**Mongo-Starter** *e giriyoruz. docker-compose.yaml ' ın içindeki ReplicaSet ismini comand : yanındaki deneme yazısını değştirerek değiştirebilirsiniz(resimde beyaz çizgiyle belirtilen yer)*
+**Mongo-Starter** *e giriyoruz.  docker-compose.yaml ' ın içindeki ReplicaSet ismini comand : ın yanındaki deneme yazısını değştirerek değiştirebilirsiniz(resimde beyaz çizgiyle belirtilen yer)*
 ![image](https://user-images.githubusercontent.com/110333072/182686787-b1786536-6cf9-4c0b-bac3-35bff8382ad9.png)
 
 ### Mongodb Çalıştırma
