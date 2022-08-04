@@ -22,7 +22,10 @@
 - config = {"_id":"deneme","members":[{"_id":0,"host":"192.168.0.12:27017"}]} 
 >_id: -> replica set ismi(resimde gösterilen yere deneme yazısını silerek replica set ismi giriniz
 ![image](https://user-images.githubusercontent.com/110333072/182687571-66657260-bad8-44f3-a3bf-eb852a79482f.png)           
->members ' a replicaSet ' e eklenecek mongodb databaseleri eklenir                                
+>members ' a replicaSet ' e eklenecek mongodb databaseleri eklenir(resimde belirtilen yer)                  
+![image](https://user-images.githubusercontent.com/110333072/182800664-06595b04-153a-421a-8151-9eb92f49a04e.png)
+
+                              
 
 - rs.initilaze(config)
 
