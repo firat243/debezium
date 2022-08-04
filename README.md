@@ -51,9 +51,11 @@
 ## Test İçin
 
 - Test ' e girilir 
-- node consumer.js de kafka consumer çalıştırılır ve productor.js de de aynısı yapılır
-- kafka deneme mongo.signum.test i dinliyor
-- mongodb ye veri ekleme yapıldığında node consumer mesajı alır.
+- productor.js ve consumer.js broker adresleri ayarlanır
+- consumer.js çalıştırılır
+- productor.js çalıştırılarak consumer e mesaj gelip gelmediği kontrol edilir
+- mongo da signum databasesinde test collection una ekleme yapılır
+- ekleme işlemi yapıldığında comsumer e mesaj gelecektir
 
 
 
